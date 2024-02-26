@@ -1,0 +1,16 @@
+### HTML Code Explanation:
+- <head>: Contains meta-information about the HTML document, such as character encoding, viewport settings, and external resources.
+- <meta charset="UTF-8" />: Specifies the character encoding of the document as UTF-8, ensuring proper rendering of special characters.
+- <meta http-equiv="X-UA-Compatible" content="IE=edge" />: Instructs Internet Explorer to use the latest rendering engine.
+- <meta name="viewport" content="width=device-width, initial-scale=1.0" />: Sets the viewport width to the device width and initial scale to 1.0, ensuring proper responsiveness on various devices.
+- <link rel="stylesheet" href="css/style.css" />: Links an external CSS file named "style.css" located in the "css" directory for styling the HTML content.
+- <body>: Contains the visible content of the HTML document.
+- <div class="container">: Defines a container for the content of the webpage.
+- <h1 class="heading">our services</h1>: Displays a heading with the text "our services".
+- <div class="box-container">: Contains a group of boxes representing different services.
+- <div class="box">: Represents a box containing information about a specific service.
+- <img src="image/icon-1.png" alt="" />: Displays an image representing the service, with the source "image/icon-1.png".
+- <h3>HTML 5</h3>: Displays the name of the service as "HTML 5".
+- <p>...</p>: Provides a brief description of the service.
+- <a href="#" class="btn">read more</a>: Creates a link to read more about the service.
+- The remaining <div class="box"> elements follow a similar structure, each representing a different service with its respective image, title, description, and "read more" link.
