@@ -1,80 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: .2s linear;
+* {
+  font-family: "Poppins", sans-serif; /*Sets the default font family to Poppins, and if not available, it falls back to a sans-serif font.*/
+  margin: 0; /* Removes default margin and padding from all elements.*/
+  padding: 0;
+  box-sizing: border-box; /* Specifies the box-sizing model as border-box, where padding and border are included in the element's total width and height.*/
+  outline: none; /* Removes outline and border from all elements. */
+  border: none;
+  text-decoration: none; /* Removes text decoration (e.g., underlines) from all elements.*/
+  text-transform: capitalize; /*Sets the text transformation to capitalize, making the first letter of each word capitalized. */
+  transition: 0.2s linear; /* Sets a transition effect with a duration of 0.2 seconds and linear timing function for smooth state changes.*/
 }
 
-.container{
-    background:linear-gradient(45deg, blueviolet, lightgreen);
-    padding:15px 9%;
-    padding-bottom: 100px;
+.container {
+  background: linear-gradient(
+    45deg,
+    blueviolet,
+    lightgreen
+  ); /*Applies a linear gradient background with colors blueviolet and lightgreen at a 45-degree angle. */
+  padding: 15px 9%; /* Adds padding of 15 pixels on the top and bottom, and 9% of the container's width on the left and right.*/
+  padding-bottom: 100px; /*Adds additional bottom padding of 100 pixels. */
 }
 
-.container .heading{
-    text-align: center;
-    padding-bottom: 15px;
-    color:#fff;
-    text-shadow: 0 5px 10px rgba(0,0,0,.2);
-    font-size: 50px;
+.container .heading {
+  text-align: center; /* Aligns the text to the center.*/
+  padding-bottom: 15px; /* Adds padding to the bottom of the heading.*/
+  color: #fff; /* Sets the text color to white.*/
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adds a text shadow for a visual effect.*/
+  font-size: 50px; /* Sets the font size to 50 pixels.*/
 }
 
-.container .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap:15px;
+.container .box-container {
+  display: grid; /*Specifies that the container should be displayed as a grid layout. */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(270px, 1fr)
+  ); /*Defines the grid layout for the columns. It uses the repeat() function to repeat the column pattern. The auto-fit keyword instructs the browser to automatically fit as many columns as possible while maintaining a minimum width of 270 pixels (minmax(270px, 1fr)). */
+  gap: 15px; /* Sets the gap (space) between grid items to 15 pixels.*/
 }
 
-.container .box-container .box{
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    border-radius: 5px;
-    background: #fff;
-    text-align: center;
-    padding:30px 20px;
+.container .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to the box with horizontal offset 0, vertical offset 5 pixels, blur radius 10 pixels, and color rgba(0, 0, 0, 0.2).*/
+  border-radius: 5px; /*Sets the border radius to 5 pixels, giving the box rounded corners.*/
+  background: #fff; /*Sets the background color of the box to white. */
+  text-align: center; /*Aligns the text content of the box to the center. */
+  padding: 30px 20px; /*Adds padding of 30 pixels to the top and bottom, and 20 pixels to the left and right sides of the box. */
 }
 
-.container .box-container .box img{
-    height: 80px;
+.container .box-container .box img {
+  height: 80px; /*Sets the height of the images to 80 pixels. */
 }
 
-.container .box-container .box h3{
-    color:#444;
-    font-size: 22px;
-    padding:10px 0;
+.container .box-container .box h3 {
+  color: #444; /* */
+  font-size: 22px; /* */
+  padding: 10px 0; /* */
 }
 
-.container .box-container .box p{
-    color:#777;
-    font-size: 15px;
-    line-height: 1.8;
+.container .box-container .box p {
+  color: #777; /* */
+  font-size: 15px; /* */
+  line-height: 1.8; /* */
 }
 
-.container .box-container .box .btn{
-    margin-top: 10px;
-    display: inline-block;
-    background:#333;
-    color:#fff;
-    font-size: 17px;
-    border-radius: 5px;
-    padding: 8px 25px;
+.container .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
 }
 
-.container .box-container .box .btn:hover{
-    letter-spacing: 1px;
+.container .box-container .box .btn:hover {
+  letter-spacing: 1px;
 }
 
-.container .box-container .box:hover{
-    box-shadow: 0 10px 15px rgba(0,0,0,.3);
-    transform: scale(1.03);
+.container .box-container .box:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
 }
 
-@media (max-width:768px){
-    .container{
-        padding:20px;
-    }
+/*This block of code applies styles to the .container class when the maximum viewport width is 768 pixels or less. */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /*Sets the padding of the container to 20 pixels on all sides when the viewport width is 768 pixels or less. */
+  }
 }
